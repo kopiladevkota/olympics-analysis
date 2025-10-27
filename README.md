@@ -1,15 +1,25 @@
 🏆 Olympics Analysis Web Application
+
 This project is a Streamlit web application for comprehensive data analysis and visualization of historical Olympics data. It provides insights into medal tallies, overall game statistics, country-specific performance, and athlete characteristics. I have used python version 3.13.9.
 
 📁 Project Structure
+
 File/Folder,Description
+
 app.py : "The main Streamlit application file. It defines the layout, user interface (sidebar, radio buttons), loads data, calls functions from preprocessor.py and helper.py, and renders all the visualizations and tables."
+
 helper.py : "Contains core data processing functions used to calculate and retrieve data for the various analyses (e.g., medal tallies, country-year lists, data over time, successful athletes)."
+
 preprocessor.py : "Contains the initial data cleaning and transformation logic (e.g., filtering for Summer Olympics, merging region data, one-hot encoding medals)."
+
 athlete_events.csv,"Main dataset containing detailed information about all athletes and events in the Olympics (ID, Name, Sex, Height, Weight, Team, NOC, etc.). (Source: Kaggle)"
+
 noc_regions.csv : Supporting dataset used to map NOC (National Olympic Committee) codes to the respective country names/regions.
+
 requirements.txt : "(Assumed) Lists all necessary Python dependencies (like streamlit, pandas, plotly, seaborn) for the project."
+
 gcode.py : "An unrelated Python script utilizing the winggcode library, likely for generating G-code for CNC hot-wire foam cutting of tapered wings. It is not part of the Olympics analysis."
+
 .venv : "The project's virtual environment folder, which isolates dependencies."
 
 How to Run the Application:
@@ -50,3 +60,14 @@ Output:
  Medal Tally:
   for overall analysis:
     ![img.png](img.png)
+  for specific country(Here I've used Brazil):
+    ![img_1.png](img_1.png)
+ Overall Analysis:
+   ![img_2.png](img_2.png)
+    ![img_3.png](img_3.png)
+ Country Wise Analysis:
+   ![img_4.png](img_4.png)
+ Athlete Wise Analysis: 
+   ![img_5.png](img_5.png)
+   ![img_6.png](img_6.png)
+
