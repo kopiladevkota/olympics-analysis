@@ -1,18 +1,5 @@
-# Core app
-streamlit==1.50.0
-
-# Data processing
-pandas==2.3.3
-numpy==2.3.3
-
-# Plotting & visualization
-plotly==5.16.1
-matplotlib==3.8.1
-seaborn==0.12.3
-plotly-figure-factory==0.1.0
-
-# HTTP requests (if used anywhere)
-requests==2.32.5
-
-# Optional but recommended for data preprocessing/cleaning
-scikit-learn==1.3.1
+streamlit
+pandas
+numpy
+plotly
+requests
