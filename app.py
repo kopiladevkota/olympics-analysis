@@ -15,6 +15,29 @@ region_df = pd.read_csv('noc_regions.csv')
 df = preprocessor.preprocess(df, region_df)
 
 st.sidebar.title("Olympics Analysis")
+
+st.markdown("---")  # Optional: Add a separator line
+st.markdown(
+    """
+    <style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: grey;
+        text-align: center;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+    </style>
+    <div class="footer">
+        <p>Copyright © Kopila Devkota's Web App | Made By Kopila Devkota.</p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 user_menu = st.sidebar.radio(
     'Select an Option',
     ('Medal Tally', 'Overall Analysis', 'Country-wise Analysis', 'Athlete Wise Analysis')
@@ -179,3 +202,8 @@ elif user_menu == 'Athlete Wise Analysis':
     fig = px.line(final, x="Year", y=["Male", "Female"])
     fig.update_layout(autosize=False, width=1000, height=600)
     st.plotly_chart(fig)
+    # app.py (Add this section to the bottom of the file)
+    # ------------------ Footer/Copyright ------------------ #
+
+    # Use an expander to visually separate the footer and keep it clean
+    # or just use st.markdown directly.
